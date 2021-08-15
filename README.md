@@ -1,7 +1,5 @@
 ## 说明
 
-本项目会罗列多个框架
-
-rxjava+retrofit+okhttp项目框架
+下载apk、文件等相关下载功能
 
 end
