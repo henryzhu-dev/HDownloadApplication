@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdkVersion 30
 
     defaultConfig {
-        minSdk 18
-        targetSdk 30
+        minSdkVersion 18
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -29,6 +29,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
 }
 
 dependencies {
@@ -40,3 +46,9 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
+
+ext {
+    PUBLISH_ARTIFACT_ID = "lib_download"
+}
+
+apply from: '../maven-publish.gradle'
