@@ -51,6 +51,6 @@ HDownloadManager.init(packageName + ".fileProvider")
 
 ## License
 -------
-BSD, part MIT and Apache 2.0. See the [LICENSE][16] file for details.
+The Apache License, Version 2.0. See the [LICENSE][http://www.apache.org/licenses/LICENSE-2.0.txt] for details.
 
 end
